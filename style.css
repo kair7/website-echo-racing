@@ -1,0 +1,64 @@
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* style the header with a grey background and padding */
+.header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+}
+
+/* style header links */
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+/* style logo link */
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* float the header links to the right */
+.header-right {
+    float: right;
+}
+
+/* media query for mobile devices */
+@media screen and (max-width: 500px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .header-right {
+        float: none;
+    }
+}
+
+/* style the team member layot */
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* style the team images */
+.team img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px; 
+}
+
