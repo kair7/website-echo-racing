@@ -6,6 +6,14 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./assets/Final_Logo.svg">
     <script src="./gallery.js"></script>
+
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
+
 </head>
 <body>
     <header>
@@ -19,22 +27,33 @@
         </div>
     </header>
     <main>
-        <div id="my_nanogallery2" data-nanogallery2>
-            <a href="./assets/gallery/car_lm23.jpg" data-ngthumb="./assets/gallery/car_lm23.jpg">Car LM 23</a>
-            <a href="./assets/gallery/car_lm24.jpg" data-ngthumb="./assets/gallery/car_lm24.jpg">Car LM 24</a>
-            <a href="./assets/gallery/car_dm24.jpg" data-ngthumb="./assets/gallery/car_dm24.jpg">Car DM 24</a>
-            <a href="./assets/gallery/ts_lm23.jpg" data-ngthumb="./assets/gallery/ts_lm23.jpg">TS LM 23</a>
-            <a href="./assets/gallery/ts_lm24.jpg" data-ngthumb="./assets/gallery/ts_lm24.jpg">TS LM 24</a>
-            <a href="./assets/gallery/ts_dm24.jpg" data-ngthumb="./assets/gallery/ts_dm24.jpg">TS DM 24</a>
-            <a href="./assets/gallery/food_dm24.jpg" data-ngthumb="./assets/gallery/food_dm24.jpg">Food DM 24</a>
-            <a href="./assets/gallery/medal_lm24.jpg" data-ngthumb="./assets/gallery/medal_lm24.jpg">Medal LM 24</a>
-            <a href="./assets/gallery/time_lm23.jpg" data-ngthumb="./assets/gallery/time_lm23.jpg">Time LM 23</a>
-            <a href="./assets/gallery/time_lm24.jpg" data-ngthumb="./assets/gallery/time_lm24.jpg">Time LM 24</a>
-            <a href="./assets/gallery/car_lm23.jpg" data-ngthumb="./assets/gallery/car_lm23.jpg">Car LM 23</a>
-            <a href="./assets/gallery/car_lm24.jpg" data-ngthumb="./assets/gallery/car_lm24.jpg">Car LM 24</a>
-            <a href="./assets/gallery/car_dm24.jpg" data-ngthumb="./assets/gallery/car_dm24.jpg">Car DM 24</a>
+        <h1>Gallery made with nanogallery2</h1>
+
+        <div ID="ngy2p" data-nanogallery2='{
+            "itemsBaseURL": "https://gh.echo-racing.de/assets/gallery/",
+            "thumbnailWidth": "auto",
+            "thumbnailDisplayTransition": "slideUp",
+            "thumbnailLabel": {
+              "position": "overImageOnMiddle",
+              "display": false
+            },
+            "galleryDisplayMode": "moreButton",
+            "thumbnailAlignment": "justified",
+            "gallerySorting": "random",
+            "thumbnailOpenImage": true
             
-            </div>
+          }'>
+          <a href="food_dm24.jpg" data-ngthumb="food_dm24.jpg" data-ngdesc="">Food DM 24</a>
+          <a href="car_lm23jpg" data-ngthumb="car_lm23jpg" data-ngdesc="">Car LM 23</a>
+          <a href="car_lm24.jpg" data-ngthumb="car_lm24.jpg" data-ngdesc="">Car LM 24</a>
+          <a href="car_dm24.jpg" data-ngthumb="car_dm24.jpg" data-ngdesc="">Car DM 24</a>
+          <a href="time_lm24.jpg" data-ngthumb="time_lm24.jpg" data-ngdesc="">Time LM 24</a>
+          <a href="time_lm23.jpg" data-ngthumb="time_lm23.jpg" data-ngdesc="">Time LM 23</a>
+          <a href="ts_lm23.jpg" data-ngthumb="ts_lm23.jpg" data-ngdesc="">TS LM 23</a>
+          <a href="ts_lm24.jpg" data-ngthumb="ts_lm24.jpg" data-ngdesc="">TS LM 24</a>
+          <a href="ts_dm24.jpg" data-ngthumb="ts_dm24.jpg" data-ngdesc="">TS DM 24</a>
+            
+        </div>
     </main>
     <footer>
         <p style="text-align: center;">2024</p>
