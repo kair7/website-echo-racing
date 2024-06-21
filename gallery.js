@@ -34,9 +34,57 @@ jQuery(document).ready(function () {
         
 
       ],
-      thumbnailWidth:  'auto',
+        thumbnailWidth:  'auto',
         thumbnailHeight: 170,
-      itemsBaseURL:    './assets/gallery/',
-          locationHash:    false
+        itemsBaseURL:    './assets/gallery/',
+        locationHash:    false,
+          
+        galleryL1DisplayMode: 'fullContent',       
+        galleryDisplayMode: 'rows',                      
+        galleryMaxRows: 4,
+        gallerySorting: 'random', 
+
+        thumbnailL1Height: 400, thumbnailL1Width: 600,   
+        thumbnailL1GutterWidth: 20,
+        thumbnailL1GutterHeight: 20,
+        thumbnailL1BorderHorizontal: 0,
+        thumbnailL1BorderVertical: 0,
+
+        thumbnailHeight: 400, thumbnailWidth: 'auto',   
+        thumbnailGutterWidth: 2,
+        thumbnailGutterHeight: 2,
+        thumbnailBorderHorizontal: 0,
+        thumbnailBorderVertical: 0,
+
+        thumbnailAlignment: 'fillWidth',
+
+        thumbnailToolbarImage : null,
+        thumbnailToolbarAlbum: null,
+
+        thumbnailL1Label: { display: true, position:'overImageOnBottom', hideIcons: true, titleFontSize: '1em', align: 'center', titleMultiLine:true, displayDescription: false},
+        thumbnailL1Label: { display: true, valign:'bottom', hideIcons: true, titleFontSize: '3em', align: 'left', titleMultiLine:true, displayDescription: false},
+
+        thumbnailLabel: { display: true, position:'overImageOnBottom', hideIcons: true, titleFontSize: '1em', align: 'center', titleMultiLine:true, displayDescription: false},
+
+        thumbnailToolbarAlbum: { topRight: 'counter' },
+        
+        thumbnailL1DisplayTransition: 'flipUp',       
+        thumbnailDisplayTransition: 'slideDown',        
+        thumbnailDisplayTransitionDuration: 500,
+        thumbnailDisplayInterval: 30,
+
+        thumbnailL1BuildInit2: 'title_font-weight_bold|image_scale_0.8|label_left_-5px|label_text-transform_uppercase|label_top_95%|label_rotateZ_-90deg|label_transform-origin_top left',
+        thumbnailL1BuildInit2: 'title_font-weight_bold|image_scale_0.8|label_left_-25px|label_top_95%|label_rotateZ_-90deg|label_transform-origin_top left',
+        thumbnailL1HoverEffect2: 'imageGrayOff|title_color_#c800ea_#aaaaaa|labelOpacity50',
+
+        touchAnimation: false,
+        touchAutoOpenDelay: 800,
+
+        galleryTheme : { 
+        thumbnail: { background: '#f1f1f1', titleShadow : '', descriptionShadow : 'none', titleColor: '#fff', borderColor: '#000' },
+        navigationBreadcrumb: { background : '#3C4B5B' },
+        },
+
+        locationHash: false
     });
   });
