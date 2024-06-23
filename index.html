@@ -6,42 +6,63 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./assets/Final_Logo.svg">
     <script src="./main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 </head>
 <body>
-    <header>
-        <div class="header">
-            <a href="./index.html" class="logo">Echo Racing</a>
-            <div class="header-right">
-                <a class="active" href="./index.html">Home</a>
-                <a href="./aboutus.html">About</a>
-                <a href="./gallery.html">Gallery</a>
-                <a href="./contact.html">Contact</a>
-            </div>
-        </div>
-    </header>
     <main>
-        <div class="team">
-            <h2>Our Team</h2>
-            <div class="team-members">
-                <div class="team-member">
-                    <img src="./assets/p.png" alt="Paul">
-                    <h3>Paul</h3>
-                    <p>Konstruktion</p>
-                </div>
-                <div class="team-member">
-                    <img src="./assets/k.png" alt="Kai">
-                    <h3>Kai</h3>
-                    <p>Grafikdesign</p>
-                </div>
-                <div class="team-member">
-                    <img src="./assets/l.png" alt="Lea">
-                    <h3>Lea</h3>
-                    <p>Teamstand</p>
-                </div>
-            </div>
+        <nav>
+            <div class="links-1"></div>
+                <a href="#">Works</a>
+                <a href="#">Archive</a>
+            <div class="logo"></div>
+                <a href="#">Modavate</a>
+            <div class="links-2"></div>
+                <a href="#">Info</a>
+                <a href="#">Contact</a>
+        </nav>
     </main>
     <footer>
         <p style="text-align: center;">2024</p>
     </footer>
+    <div class="container">
+        <div class="active-slide">
+            <img src="./assets/p.png" alt="">
+            <img src="./assets/k.png" alt="">
+            <img src="./assets/l.png" alt="">
+        </div>
+
+        <div class="slider">
+            <div class="slide" id="slide-1">
+                <div class="slide-copy">
+                    <p>Pauk</p>
+                    <p id="index">( DF 9342 084F)</p>
+                </div>
+                <div class="slide-img">
+                    <img src="./assets/p.png" alt="">
+                </div>  
+            </div>
+
+            <div class="slide" id="slide-2">
+                <div class="slide-copy">
+                    <p>Kai</p>
+                    <p id="index">( KI 9342 084F)</p>
+                </div>
+                <div class="slide-img">
+                    <img src="./assets/k.png" alt="">
+                </div>  
+            </div>
+
+            <div class="slide" id="slide-3">
+                <div class="slide-copy">
+                    <p>Lea</p>
+                    <p id="index">( ES 9342 084F)</p>
+                </div>
+                <div class="slide-img">
+                    <img src="./assets/l.png" alt="">
+                </div>  
+            </div>
+        </div>
+    </div>
 </body>
 </html>
