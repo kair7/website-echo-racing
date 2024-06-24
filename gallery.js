@@ -81,7 +81,7 @@ jQuery(document).ready(function () {
         touchAutoOpenDelay: 800,
 
         galleryTheme : { 
-        thumbnail: { background: '#f1f1f1', titleShadow : '', descriptionShadow : 'none', titleColor: '#fff', borderColor: '#000' },
+        thumbnail: { background: '#18171c', titleShadow : '', descriptionShadow : 'none', titleColor: '#fff', borderColor: '#000' },
         navigationBreadcrumb: { background : '#3C4B5B' },
         },
 
