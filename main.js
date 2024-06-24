@@ -21,7 +21,7 @@ window.addEventListener("load", function () {
     const activeSlideImages = gsap.utils.toArray(".active-slide img");
 
     function getInitialTranslateZ(slide) {
-        const style = windows.getComputedStyle(slide);
+        const style = window.getComputedStyle(slide);
         const matrix = style.transform.match(/matrix3d\((.+)\)/);
         if(matrix) {
             const values = matrix[1].split(", ");
@@ -58,7 +58,7 @@ window.addEventListener("load", function () {
 
                 slide.style.opacity = opacity;
 
-                slide.style.transform = "translateX(-50%) translateY(-50%) translateZ(${currentZ}px)";
+                slide.style.transform = `translateX(-50%) translateY(-50%) translateZ(${currentZ}px)`;
 
                 if(currentZ < 100) {
                     gsap.to(activeSlideImages[index], 1.5, {
