@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -13,8 +14,8 @@ body {
 }
 
 html, body {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -191,4 +192,49 @@ footer {
         width: 60px;
         height: 40px;
     }
+}
+
+p {
+    color: #fff;
+    font-family: "Akkura Mono";
+    font-size: 11px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.hero {
+    position: absolute;
+    top: 50%;
+    width: 100vw;
+    height: 100vh;
+    background: url("./assets/gallery/dm_24_car_rendering.png");
+    background-size: cover;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.hero 
+.header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 0.5em;
+}
+
+sup {
+    position: relative;
+    top: 0.25em;
+    color: #fff;
+    font-size: 3vw;
+}
+
+.hero h1 {
+    color: #fff;
+    font-size: 12vw;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.024em;
+    line-height: 100%;
 }

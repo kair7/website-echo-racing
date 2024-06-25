@@ -1,20 +1,3 @@
-
-window.onload = function() {
-
-    var pageTitle = document.title;
-    var attentionMessage = 'Hey, come back!';
-
-    document.addEventListener('visibilitychange', function(e) {
-        var isPageActive = !document.hidden;
-
-        if (!isPageActive) {
-            document.title = attentionMessage;
-        } else {
-            document.title = pageTitle;
-        }
-    });
-}
-
 gsap.registerPlugin(ScrollTrigger);
 window.addEventListener("load", function () {
     const slides = gsap.utils.toArray(".slide");
